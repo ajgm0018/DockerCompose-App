@@ -111,7 +111,7 @@ const MiCuenta = () => {
             const token = localStorage.getItem("accesstoken")
             var auth = "Bearer " + token
             ////var url = "http://localhost:8000/supervisor/update"
-            var url = "http://bighug.ujaen.es:5500/supervisor/update"
+            var url = "http://localhost:5500/supervisor/update"
             
 
             console.log("Autorizacion: " + auth)
