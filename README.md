@@ -12,5 +12,5 @@ A partir de ahora para ejecutar el servicio iniciar los contenedores compuestos 
 
 Puertos: 
 
-- FastApi: 6000
+- FastApi: 5500
 - React.js y nginx: 8008 

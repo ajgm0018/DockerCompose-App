@@ -29,7 +29,7 @@ const AddUsuario = () => {
     const token = localStorage.getItem("accesstoken")
     var auth = "Bearer "
     ////var url = "http://localhost:8000/users/"
-    var url = "http://bighug.ujaen.es:6000/users/"
+    var url = "http://bighug.ujaen.es:5500/users/"
 
     const Validation = () =>{
         if(nombre === ""){

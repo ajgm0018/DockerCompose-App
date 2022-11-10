@@ -36,7 +36,7 @@ const Dashboard = () => {
         
         axios.get(
             ////'http://localhost:8000/users',
-            'http://bighug.ujaen.es:6000/users',
+            'http://bighug.ujaen.es:5500/users',
             config
         ).then(
             resp => {

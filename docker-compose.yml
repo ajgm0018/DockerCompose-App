@@ -6,7 +6,7 @@ services:
             context: ./backend/
             dockerfile: Dockerfile
         ports:
-            - "6000:6000"
+            - "5500:5500"
         restart: always
     nginx:
         depends_on: 
