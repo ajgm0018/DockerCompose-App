@@ -27,7 +27,8 @@ const IniciarSupervisor = () => {
         userForm.append("username", `${email}`)
         userForm.append("password", `${password}`)
 
-        fetch('http://localhost:8000/login',{
+        ////fetch('http://localhost:8000/login',{
+        fetch('http://bighug.ujaen.es:6000/login',{
             method: 'POST',
             mode: 'cors',
             body: userForm,

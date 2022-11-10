@@ -70,7 +70,8 @@ const EditarRedSocial = (props) => {
             const token = localStorage.getItem("accesstoken")
             var auth = auth + token
             var url = 
-            "http://localhost:8000/users/" 
+            ////"http://localhost:8000/users/" 
+            "http://bighug.ujaen.es:6000/users/" 
             + localStorage.getItem('idusuario') 
             + '/social-networks/' 
             + localStorage.getItem('idredsocial')
