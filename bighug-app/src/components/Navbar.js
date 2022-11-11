@@ -72,6 +72,12 @@ const Navbar = (props) => {
                 <ConfigNavbar />
             </nav>
         )
+    }else if(props.vista === "iniciar-registrar"){
+        return(
+            <nav className='navbar-b sticky-top navbar-expand-lg'>
+                <ConfigNavbar />
+            </nav>
+        )
     }else{
         return (
             <nav className='navbar sticky-top navbar-expand-lg'>

@@ -38,8 +38,8 @@ const Info = () => {
             return(
                 <div className='container'>
                     <p className='text-help'>
-                    La línea de ayuda de Integral Care ofrece apoyo durante una crisis las 24 horas al día, 7 días a la semana así como acceso a todos nuestros programas 
-                    y servicios para adultos y niños y incluyendo citas.
+                    La línea de ayuda de Integral Care ofrece apoyo durante una crisis las 24 horas al día, 7 días a la semana, así como acceso a todos nuestros programas, 
+                    servicios para adultos y niños e incluyendo citas.
                     </p>
                     <p className='text-number'>
                     Teléfono: 844 398 8252
