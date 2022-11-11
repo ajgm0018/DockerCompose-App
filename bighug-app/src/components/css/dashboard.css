@@ -13,11 +13,17 @@
         
     }
 
+    /*
     .card{
         background-color: transparent;
         margin-top: 10px;
         border-radius: 30px;
         border-color: transparent;
+    }*/
+
+    .card{
+        margin-top: 10px;
+        border-radius: 30px;
     }
 
     .grid2:hover {
