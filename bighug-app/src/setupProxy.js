@@ -5,7 +5,7 @@ module.exports = function(app) {
         '/app1/',
         createProxyMiddleware({
             target: 'https://bighug.ujaen.es',
-            changeOrigin: true,
+            changeOrigin: false,
         })
     );
 };
