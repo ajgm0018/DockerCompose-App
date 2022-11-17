@@ -20,7 +20,7 @@ function App(props) {
 
   // --- FUNCIONES --- //
     return(
-      <Router>
+      <Router basename='/app'>
         <div className='.p-0'>
           <Routes>
             <Route path="/editarredsocial" element={<EditarRedSocial />}></Route>
