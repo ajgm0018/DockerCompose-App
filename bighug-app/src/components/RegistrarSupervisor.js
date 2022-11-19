@@ -91,7 +91,7 @@ const RegistrarSupervisor = () => {
         if(confirmPost){
             //** -- Post a backend --
             ////fetch('http://localhost:8000/register',{
-            fetch('http://localhost:5500/register',{
+            fetch('https://localhost:5500/register',{
                 method: 'POST',
                 mode: 'cors',
                 headers: {'Content-Type':'application/json'},
@@ -115,7 +115,7 @@ const RegistrarSupervisor = () => {
     return (
         <div>
             <Navbar vista = {"iniciar-registrar"}/>
-            <div className='container'>
+            <div className='container py-1'>
                 <div className="d-flex justify-content-center py-4">
                     <div className="card text-dark mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5" >
                         <div className='py-2'></div>

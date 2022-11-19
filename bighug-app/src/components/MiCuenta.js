@@ -111,7 +111,7 @@ const MiCuenta = () => {
             const token = localStorage.getItem("accesstoken")
             var auth = "Bearer " + token
             ////var url = "http://localhost:8000/supervisor/update"
-            var url = "http://localhost:5500/supervisor/update"
+            var url = "https://localhost:5500/supervisor/update"
             
 
             console.log("Autorizacion: " + auth)
@@ -147,7 +147,7 @@ const MiCuenta = () => {
 
             const token = localStorage.getItem("accesstoken")
             var auth = "Bearer " + token
-            var url = "http://localhost:8000/supervisor"
+            var url = "https://localhost:8000/supervisor"
 
             console.log(auth)
 

@@ -71,7 +71,7 @@ const EditarRedSocial = (props) => {
             var auth = auth + token
             var url = 
             ////"http://localhost:8000/users/" 
-            "http://localhost:5500/users/" 
+            "https://localhost:5500/users/" 
             + localStorage.getItem('idusuario') 
             + '/social-networks/' 
             + localStorage.getItem('idredsocial')
@@ -110,7 +110,7 @@ const EditarRedSocial = (props) => {
             const token = localStorage.getItem("accesstoken")
             var auth = "Bearer " + token
             var url = 
-            "http://localhost:8000/users/" 
+            "https://localhost:8000/users/" 
             + localStorage.getItem('idusuario') 
             + '/social-networks/' 
             + localStorage.getItem('idredsocial')

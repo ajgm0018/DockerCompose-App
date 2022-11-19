@@ -16,7 +16,7 @@ const PerfilUsuario = () => {
     const [redessociales, setRedessociales] = useState(null);
     var auth = "Bearer "
     ////var url = "http://localhost:8000/users/"
-    var url = "http://localhost:5500/users/"
+    var url = "https://localhost:5500/users/"
     const token = localStorage.getItem("accesstoken")
     const navigate = useNavigate();
 

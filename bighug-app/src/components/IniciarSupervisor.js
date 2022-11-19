@@ -28,7 +28,7 @@ const IniciarSupervisor = () => {
         userForm.append("password", `${password}`)
 
         ////fetch('http://localhost:8000/login',{
-        fetch('http://localhost:5500/login',{
+        fetch('https://localhost:5500/login',{
             method: 'POST',
             mode: 'cors',
             body: userForm,
@@ -65,7 +65,7 @@ const IniciarSupervisor = () => {
     return (
         <div>
             <Navbar vista = {"iniciar-registrar"}/>
-            <div className='container'>
+            <div className='container py-1'>
                 <div className="d-flex justify-content-center py-4">
                     <div className="card text-dark mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5" >
                         <div className='py-1'></div>

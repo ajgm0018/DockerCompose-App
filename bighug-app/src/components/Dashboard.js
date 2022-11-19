@@ -36,7 +36,7 @@ const Dashboard = () => {
         
         axios.get(
             ////'http://localhost:8000/users',
-            'http://localhost:5500/users',
+            'https://localhost:5500/users',
             config
         ).then(
             resp => {
