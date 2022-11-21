@@ -44,7 +44,7 @@ const CuentaUsuario = () => {
             const token = localStorage.getItem("accesstoken")
             var auth = "Bearer " + token
             ////var url = "http://localhost:8000/users/" + localStorage.getItem("idusuario")
-            var url = "https://localhost:5500/users/" + localStorage.getItem("idusuario")
+            var url = "https://bighug.ujaen.es/api/users/" + localStorage.getItem("idusuario")
 
             const config = {
                 headers:{

@@ -91,7 +91,7 @@ const RegistrarSupervisor = () => {
         if(confirmPost){
             //** -- Post a backend --
             ////fetch('http://localhost:8000/register',{
-            fetch('https://localhost:5500/register',{
+            fetch('https://bighug.ujaen.es/api/register',{
                 method: 'POST',
                 mode: 'cors',
                 headers: {'Content-Type':'application/json'},
