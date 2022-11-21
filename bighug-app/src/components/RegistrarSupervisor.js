@@ -117,7 +117,7 @@ const RegistrarSupervisor = () => {
             <Navbar vista = {"iniciar-registrar"}/>
             <div className='container py-1'>
                 <div className="d-flex justify-content-center py-4">
-                    <div className="card text-dark mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5" >
+                    <div className="card text-dark mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-8" >
                         <div className='py-2'></div>
                             <form method='post' onSubmit={handleSubmit}>
                                 <div className='d-flex justify-content-center'>

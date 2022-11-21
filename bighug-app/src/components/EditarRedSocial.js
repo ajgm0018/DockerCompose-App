@@ -144,7 +144,7 @@ const EditarRedSocial = (props) => {
             <Navbar vista={"options"} nombre = {"Editar red social"}/>
             <div className='py-2'></div>
             <div className="d-flex justify-content-center container py-2">
-                <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5" >
+                <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-8" >
                     <div className='py-2'></div>
                         <form method='post' onSubmit={handleSubmit}>
                             <div className='d-flex justify-content-center'>
@@ -191,7 +191,7 @@ const EditarRedSocial = (props) => {
             </div>
 
             <div className="d-flex justify-content-center container">
-                <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5" >
+                <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-8" >
                     <div className='py-2'></div>
                         <form method='post' onSubmit={handleSubmit2}>
                             <div className='d-flex justify-content-center'>

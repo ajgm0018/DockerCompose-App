@@ -74,7 +74,7 @@ const CuentaUsuario = () => {
         <div>
             <Navbar vista={"options"} nombre={"Cuenta usuario"}/>
             <div className="d-flex justify-content-center container py-2">
-                <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5 py-4" >
+                <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-8 py-4" >
                         <form method='post' onSubmit={handleSubmit}>
                             <div className='d-flex justify-content-center'>
                                 <div className='row col-11'>

@@ -105,7 +105,7 @@ const PerfilUsuario = () => {
     return(
         <div>
             <Navbar vista = {"perfil"} nombre = {localStorage.getItem("nombreusuario")} />
-            <div className='container py-4'>
+            <div className='container col-sm-10 col-md-8 col-lg-6 col-xl-6 py-4'>
             <div className='py-2'></div>
 
             <GetRedes />

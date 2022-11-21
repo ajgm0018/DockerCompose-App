@@ -167,7 +167,7 @@ return(
     <div>
         <Navbar vista = {"home"} nombre = {"Añadir usuario"} />
         <div className="container d-flex justify-content-center py-2">
-            <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5" >
+            <div className="card text-dark bg-light mb-3 col-12 col-sm-9 col-md-8 col-lg-8 col-xl-8" >
                 <div className='py-1'></div>
                 <form method='post' onSubmit={handleSubmit}>
                 <div className='d-flex py-2'>
