@@ -92,7 +92,7 @@ const AddUsuario = () => {
                     }
                 }
             })
-            .then(console.log).catch(console.log)
+            ////.then(console.log).catch(console.log)
             
         }
     }

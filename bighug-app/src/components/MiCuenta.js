@@ -131,7 +131,8 @@ const MiCuenta = () => {
                 url,
                 jsonContent,
                 config
-            ).then(console.log).catch(console.log);
+            )
+            ////).then(console.log).catch(console.log);
             
             alert('Se ha modificado la contraseña con éxito')
             logout()
@@ -163,7 +164,8 @@ const MiCuenta = () => {
             axios.delete(
                 url,
                 config
-            ).then(console.log).catch(console.log);
+            )
+            ////).then(console.log).catch(console.log);
 
             alert('Se ha eliminado su cuenta con exito')
             localStorage.clear()

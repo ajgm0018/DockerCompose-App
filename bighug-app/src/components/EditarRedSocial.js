@@ -92,7 +92,8 @@ const EditarRedSocial = (props) => {
                 url,
                 jsonContent,
                 config
-            ).then(console.log).catch(console.log);
+            )
+                ////).then(console.log).catch(console.log);
 
             alert('Se ha editado la cuenta con exito')
             navigate(-1)
@@ -126,7 +127,8 @@ const EditarRedSocial = (props) => {
             axios.delete(
                 url,
                 config
-            ).then(console.log).catch(console.log);
+            )
+            ////).then(console.log).catch(console.log);
 
             alert('Se ha eliminado la cuenta con exito')
             navigate(-1)

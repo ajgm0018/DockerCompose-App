@@ -57,7 +57,8 @@ const CuentaUsuario = () => {
             axios.delete(
                 url,
                 config
-            ).then(console.log).catch(console.log);
+            )
+            ////).then(console.log).catch(console.log);
 
             alert('Se ha eliminado la cuenta con exito')
             navigate('/dashboard')
