@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './css/general.css';
 import './css/help.css';
-import { useNavigate, Navigate } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import Navbar from './Navbar';
 
 //*TODO -- Contenido de información de ayuda --

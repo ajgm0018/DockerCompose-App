@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import './css/general.css';
 import './css/navbar.css';
 import Settings from './sub-components/Settings'
@@ -12,7 +12,7 @@ const Navbar = (props) => {
 
     // --- FUNCIONES --- //
     function ConfigNavbar(){
-        console.log(props.vista)
+        //console.log(props.vista)
         const row = []
         if(props.vista === "iniciar-registrar"){
             row.push(

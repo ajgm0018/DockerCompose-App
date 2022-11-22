@@ -114,8 +114,8 @@ const MiCuenta = () => {
             var url = "https://bighug.ujaen.es/api/supervisor/update"
             
 
-            console.log("Autorizacion: " + auth)
-            console.log("URL: " + url)
+            //console.log("Autorizacion: " + auth)
+            //console.log("URL: " + url)
 
             const config = {
                 headers:{
@@ -150,7 +150,7 @@ const MiCuenta = () => {
             ////var url = "https://localhost:8000/supervisor"
             var url = "https://bighug.ujaen.es/api/supervisor"
 
-            console.log(auth)
+            //console.log(auth)
 
             const config = {
                 headers:{
@@ -275,7 +275,7 @@ const MiCuenta = () => {
                 </div>
             </div>
 
-            <div className='d-flex container justify-content-center col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 py-2'>
+            <div className='d-flex container justify-content-center col-12 col-sm-8 col-md-8 col-lg-8 col-xl-2 py-2'>
                 <button 
                     className="btn btn-primary btn-lg button-green"
                     onClick={logout}

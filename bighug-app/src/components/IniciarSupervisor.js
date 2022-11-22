@@ -35,7 +35,7 @@ const IniciarSupervisor = () => {
         })
         .then(function(response) {
             if(response.status === 200){
-                console.log("Todo ok")
+                //console.log("Todo ok")
             }else{
                 setMessage("El usuario o la contraseña son erróneos")
                 throw new Error(response.status)

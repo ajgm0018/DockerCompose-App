@@ -45,8 +45,8 @@ const AddRedSocial = () => {
     useEffect(() => {
         auth = auth + token
         url = url + userid + "/social-networks/" + redsocial
-        console.log("Auth: " + auth)
-        console.log("Url: " + url)
+        //console.log("Auth: " + auth)
+        //console.log("Url: " + url)
     }, [redsocial]);
 
     //** -- Tratamiento cuando se envía formulario --
@@ -94,7 +94,7 @@ const AddRedSocial = () => {
                     <form method='post' onSubmit={handleSubmit}>
                     <div className='d-flex'>
                         <div className='row justify-content-center py-3'>
-                            <img src={red_social} className='img-add2'></img>
+                            <img src={red_social} className='img-add2' alt='img-redsocial'></img>
                         </div>
                     </div>
 

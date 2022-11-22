@@ -17,7 +17,7 @@ const LogOut = () => {
             
     // --- HTML --- //
     return (
-        <img className='nav-img-setting' src={logout} onClick={log}/>
+        <img className='nav-img-setting' src={logout} onClick={log} alt='logout'/>
     )
 }
 

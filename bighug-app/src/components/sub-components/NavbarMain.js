@@ -10,7 +10,7 @@ const NavbarMain = () => {
     // --- HTML --- //
     return (
         <div className='div-logo'>
-            <img className='nav-img-logo' src={logo} />
+            <img className='nav-img-logo' src={logo} alt='Prevemental'/>
         </div>
     )
 }

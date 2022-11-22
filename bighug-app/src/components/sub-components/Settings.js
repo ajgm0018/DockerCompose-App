@@ -27,20 +27,20 @@ const Settings = (props) => {
     // --- HTML --- //
     if(props.tipo === "cuenta"){
         return (
-            <img className='nav-img-setting' src={setting} onClick={redirect} />
+            <img className='nav-img-setting' src={setting} onClick={redirect} alt='setting'/>
         )
     }
 
     // Vista perfil usuario
     if(props.tipo === "usuario"){
         return (
-            <img className='nav-img-setting' src={setting} onClick={redirect2} />
+            <img className='nav-img-setting' src={setting} onClick={redirect2} alt='setting'/>
         )
     }
 
     if(props.tipo === "redsocial"){
         return (
-            <img className='nav-img-edit' src={edit} onClick={redirect3} />
+            <img className='nav-img-edit' src={edit} onClick={redirect3} alt='setting'/>
         )
     }
     

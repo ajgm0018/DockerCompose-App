@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../css/general.css';
 import '../css/navbar.css';
 import back from '../images/flechaizquierda.png'
@@ -9,8 +9,6 @@ import { useNavigate } from 'react-router-dom'
 const Back = (props) => {
 
     const navigate = useNavigate();
-    const texto_cuenta = "Mi cuenta"
-    const texto_perfil = "Inicio"
 
     const redirect = () => {
         if(props.vista === "perfilusuario"){
@@ -26,14 +24,14 @@ const Back = (props) => {
     if(props.vista === "perfilusuario" || props.vista === "addusuario" || props.vista === "addredsocial"){
         return (
             <div className='navbar-brand'>
-                <img className='nav-img-home' src={back}  onClick={redirect} />
+                <img className='nav-img-home' src={back}  onClick={redirect} alt='back'/>
                 <p className='text-nav'>{props.nombre}</p>
             </div>
         )
     }else{
         return (
             <div className='navbar-brand'>
-                <img className='nav-img-home' src={back}  onClick={redirect} />
+                <img className='nav-img-home' src={back}  onClick={redirect} alt='back'/>
                 <p className='text-nav'>Modificar</p>
             </div>
         )

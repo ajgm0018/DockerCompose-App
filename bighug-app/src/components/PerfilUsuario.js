@@ -3,7 +3,7 @@ import './css/perfilusuario.css';
 import React from 'react'
 import BotonAddRedSocial from './sub-components/BotonAddRedSocial';
 import { useEffect, useState } from "react";
-import { useNavigate, Navigate} from 'react-router-dom'
+import { Navigate} from 'react-router-dom'
 import axios from 'axios';
 import Navbar from './Navbar';
 import RedSocial from './sub-components/RedSocial';
@@ -18,15 +18,14 @@ const PerfilUsuario = () => {
     ////var url = "http://localhost:8000/users/"
     var url = "https://bighug.ujaen.es/api/users/"
     const token = localStorage.getItem("accesstoken")
-    const navigate = useNavigate();
 
     //** -- Cada vez que entra en la vista pedir las redes sociales asociadas --
     useEffect(() => {
         auth = auth + token
         url = url + localStorage.getItem("idusuario") + '/social-networks'
 
-        console.log(auth)
-        console.log(url)
+        //console.log(auth)
+        //console.log(url)
 
         const config = {
             headers:{
@@ -42,7 +41,7 @@ const PerfilUsuario = () => {
         )
         .then(
             resp => {
-                console.log(redessociales)
+                //console.log(redessociales)
                 setRedessociales(resp.data)
         });
 

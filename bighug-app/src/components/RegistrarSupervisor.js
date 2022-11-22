@@ -106,7 +106,7 @@ const RegistrarSupervisor = () => {
                 }
             })
         }else{
-            console.log("Hay algún error")
+            //console.log("Hay algún error")
         }
     }
 

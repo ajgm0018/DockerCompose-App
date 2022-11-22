@@ -1,10 +1,7 @@
 import '../css/general.css';
 import '../css/addredsocial.css';
 import React from 'react'
-import { useEffect, useState } from "react";
-import { useNavigate, Navigate } from 'react-router-dom'
-import axios from 'axios';
-import add from '../images/add.png'
+import { useNavigate } from 'react-router-dom'
 
 //*TODO -- Botón para añadir red social --
 

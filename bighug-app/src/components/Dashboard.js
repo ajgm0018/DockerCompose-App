@@ -70,7 +70,7 @@ const Dashboard = () => {
             }
             row.push(
                 <div className='col grid2'  onClick={redirect} key={"añadir"}>
-                    <img src={add} className="card-img" alt="placeholder"></img>
+                    <img src={add} className="card-img" alt="img-perfil"></img>
                     <div className='larger'>
                         <h3 className="nombre-user">Añadir perfil a supervisar</h3>
                     </div>

@@ -6,7 +6,6 @@ import twitter from '../images/twitter.png'
 import instagram from '../images/instagram.png'
 import desplegable1 from '../images/desplegable1.png'
 import desplegable2 from '../images/desplegable2.png'
-import grafico from '../images/graficoplaceholder.png'
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
 
@@ -51,7 +50,7 @@ const RedSocial = (props) => {
 
     function desplegable_action(id){
 
-        console.log(localStorage.getItem("emailsupervisor"))
+        //console.log(localStorage.getItem("emailsupervisor"))
 
         setImagendesplegable1(desplegable1)
         if(activo1){
@@ -194,7 +193,7 @@ const RedSocial = (props) => {
         if(props.id === "1"){
             row.push(
                 <div className="col-3 div-info" key={props.id + "1"}>
-                    <img className='img-info' src={imagendesplegable1} onClick={() => desplegable_action("1")}></img>
+                    <img className='img-info' src={imagendesplegable1} onClick={() => desplegable_action("1")} alt='desplegable'></img>
                 </div>
             )
         }
@@ -202,7 +201,7 @@ const RedSocial = (props) => {
         if(props.id === "2"){
             row.push(
                 <div className="col-3 div-info" key={props.id + "2"}>
-                    <img className='img-info' src={imagendesplegable2} onClick={() => desplegable_action("2")}></img>
+                    <img className='img-info' src={imagendesplegable2} onClick={() => desplegable_action("2")} alt='desplegable'></img>
                 </div>
             )
         }
@@ -210,7 +209,7 @@ const RedSocial = (props) => {
         if(props.id === "3"){
             row.push(
                 <div className="col-3 div-info" key={props.id + "3"}>
-                    <img className='img-info' src={imagendesplegable3} onClick={() => desplegable_action("3")}></img>
+                    <img className='img-info' src={imagendesplegable3} onClick={() => desplegable_action("3")} alt='desplegable'></img>
                 </div>
             )
         }
@@ -218,7 +217,7 @@ const RedSocial = (props) => {
         if(props.id === "4"){
             row.push(
                 <div className="col-3 div-info" key={props.id + "4"}>
-                    <img className='img-info' src={imagendesplegable4} onClick={() => desplegable_action("4")}></img>
+                    <img className='img-info' src={imagendesplegable4} onClick={() => desplegable_action("4")} alt='desplegable'></img>
                 </div>
             )
         }
@@ -255,7 +254,7 @@ const RedSocial = (props) => {
         return (
             <div className='container'>
                 <div className='inline'>
-                    <img className='img-red' src={imagenredsocial}></img>
+                    <img className='img-red' src={imagenredsocial} alt='img-redsocial'></img>
                     <h5 className='text-email'>{textoredsocial}</h5>
                     <a className='setting-padding'><Settings tipo={"redsocial"} idred={props.idred} nombre={props.name}/></a>
                 </div>

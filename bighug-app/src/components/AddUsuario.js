@@ -22,14 +22,14 @@ const AddUsuario = () => {
 
     // --- Variables --- //
     const [nombre, setNombre] = useState("");
-    const [biblioteca, setBiblioteca] = useState([defaul, uno, dos, tres, cuatro, cinco, seis, siete]);
+    //const [biblioteca, setBiblioteca] = useState([defaul, uno, dos, tres, cuatro, cinco, seis, siete]);
     const [imagen, setImagen] = useState(defaul);
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
     const token = localStorage.getItem("accesstoken")
     var auth = "Bearer "
     ////var url = "http://localhost:8000/users/"
-    var url = "https://bighug.ujaen.es/api/users/"
+    var url = "https://bighug.ujaen.es/api/users"
 
     const Validation = () =>{
         if(nombre === ""){
@@ -42,8 +42,8 @@ const AddUsuario = () => {
 
     useEffect(() => {
         auth = auth + token
-        console.log("Auth: " + auth)
-        console.log("Url: " + url)
+        //console.log("Auth: " + auth)
+        //console.log("Url: " + url)
     }, [nombre, imagen]);
 
     //** -- Tratamiento cuando se envía formulario
@@ -86,7 +86,7 @@ const AddUsuario = () => {
             })
             .catch(function(error) {
                 if(error.response){
-                    console.log(error.response.status)
+                    //console.log(error.response.status)
                     if(error.response.status === 400){
                         setMessage("Este usuario ya existe")
                     }
@@ -111,48 +111,48 @@ const AddUsuario = () => {
                 <div className='row'>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(defaul)}>
-                            <img src={defaul} className='img-add iz-pad'></img>
+                            <img src={defaul} className='img-add iz-pad' alt='default'></img>
                         </button>
                     </div>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(uno)}>
-                            <img src={uno} className='img-add der-pad'></img>
+                            <img src={uno} className='img-add der-pad' alt='1'></img>
                         </button>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(dos)}>
-                            <img src={dos} className='img-add iz-pad'></img>
+                            <img src={dos} className='img-add iz-pad' alt='2'></img>
                         </button>
                     </div>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(tres)}>
-                            <img src={tres} className='img-add der-pad'></img>
+                            <img src={tres} className='img-add der-pad' alt='3'></img>
                         </button>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(cuatro)}>
-                            <img src={cuatro} className='img-add iz-pad'></img>
+                            <img src={cuatro} className='img-add iz-pad' alt='4'></img>
                         </button>
                     </div>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(cinco)}>
-                            <img src={cinco} className='img-add der-pad'></img>
+                            <img src={cinco} className='img-add der-pad' alt='5'></img>
                         </button>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(seis)}>
-                            <img src={seis} className='img-add iz-pad'></img>
+                            <img src={seis} className='img-add iz-pad' alt='6'></img>
                         </button>
                     </div>
                     <div className='col'>
                         <button type="button" className='btn-img' data-bs-dismiss="modal" onClick={() => cambiarImagen(siete)}>
-                            <img src={siete} className='img-add der-pad'></img>
+                            <img src={siete} className='img-add der-pad' alt='7'></img>
                         </button>
                     </div>
                 </div>
@@ -173,7 +173,7 @@ return(
                 <div className='d-flex py-2'>
                     <div className='row  justify-content-center'>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src={imagen} className='img-add'></img>
+                            <img src={imagen} className='img-add' alt='img-avatar'></img>
                         </button>
                     </div>
                 </div>
